@@ -1,4 +1,8 @@
 def square_array(array)
   # your code here
-  array.collect {|number| number * number}
+  squarred_array = []
+  array.each do |number|
+    squarred_array << number * number
+  end
+  return squarred_array
 end
